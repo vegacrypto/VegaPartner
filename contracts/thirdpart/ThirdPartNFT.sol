@@ -21,4 +21,6 @@ contract ThirdPartNFT is ERC721A, Ownable {
     function _baseURI() internal view virtual override returns (string memory) {
         return _baseUri;
     }
+
+    receive() external virtual payable {}
 }
